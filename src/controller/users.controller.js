@@ -14,6 +14,7 @@ userController.renderEditForm = async (req, res) =>{
 }
 
 userController.updateUser = async (req, res) =>{
+    //La línea req.params.id deberá cambiarse una vez que se tenga listo el login
     const {name, email} = req.body
     await User.findByIdAndUpdate(req.params.id, {name, email})
     console.log("User updated succesfully");
