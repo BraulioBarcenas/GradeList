@@ -8,9 +8,13 @@ userController.index = (req, res) => {
 userController.renderEditForm = async (req, res) =>{
     
     const user = await User.findById(req.params.id).lean()
-    console.log("object");
-
-    res.render('users/editUser', {user})
+    res.render('layouts/index', {user}, {
+        template: {
+            path: 'users/EditUser',
+            title: 'User edit',
+            css: ['main', 'userEdit']
+        }
+    })
 }
 
 userController.updateUser = async (req, res) =>{

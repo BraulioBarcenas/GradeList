@@ -23,20 +23,22 @@ body{
     margin-top: 5%;
 }
 
-.title{
-    color: #0E498F;
-    grid-row: 1;
-    width: 100%;
-    text-align: center;
-    font-size: x-large;
-    margin-top: 1%;
-}
-
 #editUserImg{
-    grid-row: 2;
+    grid-row: 1;
     width: 15%;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+.title{
+    color: #0E498F;
+    grid-row: 2;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    margin-top: 1%;
+    margin-bottom: 5%;
 }
 
 .form{
@@ -52,7 +54,7 @@ body{
 .formInput{
     width: 80%;
     margin: 0.7%;
-    padding: 1.5%;
+    padding: 2%;
     border-radius: 5px;
     font-size: 14px;
     border: 0.5px solid rgba(85, 85, 85, 0.26);
@@ -67,7 +69,7 @@ body{
     Transition: 0.6s;
     Border-radius: 5px;
     padding: 1% 5% 1% 5%;
-    margin: 2%;
+    margin: 3% 0% 4% 0%;
 }
 
 .btnSubmit:hover{
